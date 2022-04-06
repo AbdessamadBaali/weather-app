@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2d2a2a;
+    background-image: url("https://source.unsplash.com/user/erondu/1600x900");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:   'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+ 
+.card_weather {
+    background-color: #000000cf;
+    padding: 2rem;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 450px;
+    color: white;
+    border: 2px solid #000;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button, input{
+    margin-left: 0.5rem;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #3f393958;
+    color: white;
+    transition: ease-in-out .2s;
+    font-size: 18px;
+}
+button:hover{
+    background-color: #a7a7a758;
+}
+input{
+    width: 75%;
+    height: 20px;
+    cursor: default;
+}
+h2 {
+    letter-spacing: 2px;
+}
+.box {
+    display: flex;
+    align-items: center;
+}
+.weather.loading {
+    visibility: hidden;
+    position: relative;
+}
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+}
