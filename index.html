@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Baalidev</title>
+    <link rel="stylesheet" href="styles/style.css">    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+</head>
+<body>
+
+    <div data-aos="fade-right" data-aos-duration="1300" class="card_weather">
+        <div class="search">
+            <input type="text" value="" class="search-bar" placeholder="search">
+            <button id="btn"> search  </button>
+        </div>
+        <!-- weather information -->
+        <div class="weather loading">
+            <h2 class="city">Weather in City</h2>
+            <div class="temp">51° C</div>
+            <div class="box">
+                <img src="" alt="" class="icon">
+                <span class="description">Cloudy</span>
+            </div>
+            <div class="humidity">humidity: 60%</div>
+            <div class="wind">wind speed: 15 km/h</div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>>
+</body>
+</html>
